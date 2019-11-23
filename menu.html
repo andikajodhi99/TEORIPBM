@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: black;
+      padding: 1px;
+      text-align: right;
+      font-size: 24px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 10%;
+      height: 100%;
+      /* only for demonstration, should be removed */
+      background: #ccc;
+      background-color: yellow;
+      padding: 10px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 85%;
+      background-color: #f1f1f1;
+      height: 100%;
+      /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .center p {
+      margin: 10px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .center p a {
+      color: #757575;
+    }
+
+    .link {
+      text-decoration: none;
+      font-size: 20pt;
+      color: white;
+    }
+
+    .link:hover {
+      color: blue;
+    }
+
+    .link:link {
+      color: blue;
+    }
+
+    .link:active {
+      color: green;
+    }
+
+    .link:visited {
+      background: yellow;
+    }
+
+    .asu {
+      text-decoration: none;
+      color: black;
+    }
+
+    .asu:hover {
+      color: blue;
+    }
+
+    /* identical to box height */
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>
+      <a class="link" href="menu.html">Home </a>
+      <a class="link" href="logout.php"> LogOut</a></p>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <table>
+          <li><a class="asu" href="pesan.html">PESAN</a></li>
+          <li><a class="asu" href="menu.html">MENU</a></li>
+          <li><a class="asu" href="inputdata.html">INPUT DATA</a></li>
+          <li><a class="asu" href="account.html">ACCOUNT</a></li>
+        </table>
+      </ul>
+    </nav>
+    <article>
+      <h2>MENU MAKAN </h2>
+      <table border="1">
+        <tr>
+          <th>Foto</th>
+          <th>Nama makan </th>
+          <th>harga</th>
+          <th>stock</th>
+        </tr>
+
+      </table>
+      <h2>MENU MINUM </h2>
+      <table border="1">
+        <tr>
+          <th>Foto</th>
+          <th>Nama minum </th>
+          <th>harga</th>
+          <th>stock</th>
+        </tr>
+      </table>
+    </article>
+  </section>
+</body>
+
+</html>
