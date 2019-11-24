@@ -2,8 +2,9 @@
 include 'config.php';
 session_start();
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']);
  
+
 $login = mysqli_query($db, "select * from admin where username='$username' and password='$password'");
 $cek = mysqli_num_rows($login);
 if($cek > 0){

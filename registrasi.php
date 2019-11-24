@@ -1,12 +1,10 @@
 <html>
-
 <head>
    <meta charset="utf-8">
    <title>Template register | 1</title>
    <link rel="stylesheet" href="style.css"> <!-- pemanggilan file css untuk style pada file index-1.html -->
    <meta name="viewport" content="width=device-width , initial-scale=1">
 </head>
-
 <body>
    <div id="login">
       <!-- membuat sebuah div id dengan tujuan sebagai background utama  -->
@@ -15,7 +13,7 @@
          <img src="pict/logo22.png">
          <h4>REGISTER</h4>
          <!-- membuat judul pembuka -->
-         <form class="fl" action="" method="post">
+         <form class="fl" action="prosesregistrasi.php" method="post">
             <input class="itpw" type="text" name="username" placeholder="Username"><br>
             <input class="itpw" type="text" name="Email" placeholder="Email"><br>
             <input class="itpw" type="password" name="password" placeholder="Password"><br>
@@ -24,5 +22,4 @@
       </div>
    </div>
 </body>
-
 </html>
